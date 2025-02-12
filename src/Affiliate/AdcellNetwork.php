@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace JUNU\Affiliate;
 
-use PDO;
 use Exception;
 
 class AdcellNetwork
@@ -13,13 +12,11 @@ class AdcellNetwork
     private string $apiPassword;
     private ?string $token = null;
     private int $tokenExpires = 0;
-    private PDO $db;
 
-    public function __construct(string $userId, string $apiPassword, PDO $db)
+    public function __construct(string $userId, string $apiPassword)
     {
         $this->userId      = $userId;
         $this->apiPassword = $apiPassword;
-        $this->db          = $db;
     }
 
     /**
