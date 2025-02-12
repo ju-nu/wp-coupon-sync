@@ -1,0 +1,14 @@
+{
+    "name": "ju-nu/wp-coupon-sync",
+    "description": "Standalone PHP CLI app to sync coupons from affiliate networks into WordPress.",
+    "type": "project",
+    "require": {
+        "php": ">=8.3",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JUNU\\": "src/"
+        }
+    }
+}
